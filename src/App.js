@@ -1,10 +1,10 @@
 
 import './App.css';
-import ResponsiveAppBar from './components/header/header';
+import Main from './components/main';
 
 function App() {
   return (
-<ResponsiveAppBar />
+    <Main />
   );
 }
 
