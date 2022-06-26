@@ -19,14 +19,18 @@ const Navbar = () => {
   console.log(isMatch);
 
   // name of navbar sections or pages
+  const links=["/ourhotels",
+  "/experiences",
+  "/wedding",
+  "/aboutUs",
+  "/contactUs"];
+
   const pages = [
     "Our Hotels",
     "experiences",
     "Wedding",
     "ABoutUs",
-    "ContactUs",
-  ];
-
+    "ContactUs"];
   // change color of nav while scrolling
   const [color, setColor] = useState("#00000000");
   const changeColor = () => {
@@ -76,9 +80,8 @@ const Navbar = () => {
                 onChange={(e, value) => setValue(value)}
               >
                 {/* navbar pages or sectioins element*/}
-                {pages.map((page, index) => (
-                  
-                  <Tab key={index} label={page} sx={{ fontSize: "1.1rem" }} />
+                {pages.map((pages, index) => (
+                  <Tab  label={pages} sx={{ fontSize: "1.1rem" }} to={links[index]}/>
                 ))}
               </Tabs>
               {/* login button*/}

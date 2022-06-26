@@ -18,7 +18,7 @@ export default function DeatailCard({ name, des1 }) {
     >
       {/*image*/}
       <Grid item xs={5} sx={{ height: "100%" }}>
-        <Fade left duration={1000}>
+        <Fade up duration={1000}>
           <Box
             component="img"
             sx={{
@@ -39,12 +39,14 @@ export default function DeatailCard({ name, des1 }) {
           <div className="vl"></div>
         </Slide></Fade>
       </Grid>
-
+      {/*details*/}
+     
       <Grid
         item
         sx={{
           height: 200,
-          marginTop: 3,
+          width:"auto",
+          marginTop: 2,
           position: "static",
           paddingRight: 0,
           paddingLeft: 2,
@@ -53,14 +55,14 @@ export default function DeatailCard({ name, des1 }) {
         {name.map((name, index) => {
           return (
             <>
-              <div className="card" sx={{ width: 200 }}>
+              <div className="card" sx={{ width: 200,marginBottom:0 }}>
                 <Slide left duration={1500}>
                   {/*heading above line*/}
                   <Typography key={index} variant="h4">
                     {name}
                   </Typography>
                   {/*descriptioin above line*/}
-                  <Typography width="480px">{des1}</Typography>
+                  <Typography width="480px">{des1[index]}</Typography>
                 </Slide>
               </div>
               {/*horizontal line*/}

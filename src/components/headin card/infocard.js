@@ -4,17 +4,8 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import "./infocard.css";
 
-export default function InfoCard() {
-  const name = "Pradeep Palace";
-  const des = (
-    <p>
-      {" "}
-      <b> Best Budget Corparate hotel </b> in the city situated at the most
-      prime location in the city , <b>Hotel Preadeep Palace</b> has set a bench
-      mark in the hosptality sector .serving you with the best since <b>9 years</b> and
-      will continue to do same
-    </p>
-  );
+export default function InfoCard({name,des}) {
+
   return (
     <Grid
       container
@@ -30,7 +21,7 @@ export default function InfoCard() {
         item
         sx={{
           height: 200,
-          marginTop: 3,
+          marginTop: 10,
           position: "static",
           paddingRight: 0,
           paddingLeft: 2,
