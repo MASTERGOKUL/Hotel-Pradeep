@@ -1,4 +1,6 @@
 import React from "react";
+import AboutUs from "./aboutus/aboutus";
+import Footer from "./footer/footer";
 import Headerimg from "./headerimg";
 import Navbar from "./navbar/navbar";
 import Palace from "./our hotels/pradeep palace/palace";
@@ -9,8 +11,10 @@ const Main = () => {
     <>
       <Navbar />
       <Headerimg />
+      <AboutUs/>
       <Palace />
       <Starinn />
+      <Footer/>
     </>
   );
 };

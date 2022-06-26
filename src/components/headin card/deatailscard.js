@@ -46,7 +46,7 @@ export default function DeatailCard({ name, des1 }) {
         sx={{
           height: 200,
           width:"auto",
-          marginTop: 2,
+          marginTop: 3,
           position: "static",
           paddingRight: 0,
           paddingLeft: 2,
@@ -62,7 +62,7 @@ export default function DeatailCard({ name, des1 }) {
                     {name}
                   </Typography>
                   {/*descriptioin above line*/}
-                  <Typography width="480px">{des1[index]}</Typography>
+                  <Typography width="540px">{des1[index]}</Typography>
                 </Slide>
               </div>
               {/*horizontal line*/}

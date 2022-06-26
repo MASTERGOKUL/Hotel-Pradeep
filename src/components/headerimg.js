@@ -14,6 +14,7 @@ const Headerimg = () => {
       sx={{
         height: "950px",
         backgroundImage: bgimg,
+        backgroundAttachment: "fixed",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",

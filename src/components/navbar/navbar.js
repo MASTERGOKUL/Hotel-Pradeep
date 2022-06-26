@@ -34,7 +34,7 @@ const Navbar = () => {
   // change color of nav while scrolling
   const [color, setColor] = useState("#00000000");
   const changeColor = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 500) {
       setColor("#000");
     } else {
       setColor("#00000000");

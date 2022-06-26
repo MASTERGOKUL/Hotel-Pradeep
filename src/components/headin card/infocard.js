@@ -60,7 +60,7 @@ export default function InfoCard({name,des}) {
             component="img"
             sx={{
               height: 800,
-              width: 1000,
+              width: 990,
             }}
             alt="The house from the offer."
             src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
