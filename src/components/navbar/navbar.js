@@ -77,6 +77,7 @@ const Navbar = () => {
               >
                 {/* navbar pages or sectioins element*/}
                 {pages.map((page, index) => (
+                  
                   <Tab key={index} label={page} sx={{ fontSize: "1.1rem" }} />
                 ))}
               </Tabs>

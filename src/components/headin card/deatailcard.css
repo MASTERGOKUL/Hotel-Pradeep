@@ -1,23 +1,24 @@
 .card:hover + .card-border {
-    border-color: #ff89ff;
-    width: 100%;
+    border-color: #7494EC;
+    width: 80%;
     -webkit-transition: width 0.6s ease-in-out;
     -moz-transition: width 0.6s ease-in-out;
     -o-transition: width 0.6s ease-in-out;
     transition: width 0.6s ease-in-out;
   }
   .vl {
-    margin-top: 35px;
-    border-left: 15px solid green;
+    margin-top: 25px;
+    border: 8px solid #7494EC;
     height: 750px;
-    border-end-end-radius: 10;
+    width: 0px;
+    border-radius: 10px;
   }
   
   .card-border {
     height: 60px;
-    width: 50%;
-    border-top: 5px solid ;
-    margin-bottom: 20px;
+    width: 60%;
+    border-top: 5px solid   #1976D2;
+    margin-bottom: 10px;
     -webkit-transition: width 0.6s ease-in-out;
     -moz-transition: width 0.6s ease-in-out;
     -o-transition: width 0.6s ease-in-out;
