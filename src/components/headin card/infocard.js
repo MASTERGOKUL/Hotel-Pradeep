@@ -8,6 +8,7 @@ export default function InfoCard({name,des}) {
 
   return (
     <Grid
+    id="ourhotels"
       container
       sx={{
         height: 800,

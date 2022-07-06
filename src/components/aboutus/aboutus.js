@@ -5,7 +5,7 @@ import React from "react";
 import "./about.css";
 export default function AboutUs() {
   return (
-    <Box className="aboutus">
+    <Box className="aboutus" id="aboutUs" paddingTop={10}>
       <div className="card aboutcard" sx={{ width: 200 }} align="center">
         <Slide left duration={1500}>
           {/*heading above line*/}

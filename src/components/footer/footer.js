@@ -5,7 +5,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <Box className="footer">
+    <Box className="footer" id="contactUs">
       <Grid container>
         <Grid container ml={20} mt={5} columns={3}>
           <Typography variant="h2">Hotel Pradeep</Typography>

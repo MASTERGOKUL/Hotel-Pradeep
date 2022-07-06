@@ -19,11 +19,11 @@ const Navbar = () => {
   console.log(isMatch);
 
   // name of navbar sections or pages
-  const links=["/ourhotels",
-  "/experiences",
-  "/wedding",
-  "/aboutUs",
-  "/contactUs"];
+  const links=["#ourhotels",
+  "#experiences",
+  "#",
+  "#aboutUs",
+  "#contactUs"];
 
   const pages = [
     "Our Hotels",
@@ -81,7 +81,8 @@ const Navbar = () => {
               >
                 {/* navbar pages or sectioins element*/}
                 {pages.map((pages, index) => (
-                  <Tab  label={pages} sx={{ fontSize: "1.1rem" }} to={links[index]}/>
+                 
+                  <Tab  label={pages} sx={{ fontSize: "1.1rem" }} href={links[index]}></Tab>
                 ))}
               </Tabs>
               {/* login button*/}

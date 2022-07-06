@@ -10,11 +10,11 @@ const Main = () => {
   return (
     <>
       <Navbar />
-      <Headerimg />
-      <AboutUs/>
-      <Palace />
+      <Headerimg id="heading" />
+      <AboutUs id="about"/>
+      <Palace id="palace"/>
       <Starinn />
-      <Footer/>
+      <Footer id="contact"/>
     </>
   );
 };
