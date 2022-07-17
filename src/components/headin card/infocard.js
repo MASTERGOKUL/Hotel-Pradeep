@@ -4,11 +4,11 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import "./infocard.css";
 
-export default function InfoCard({name,des}) {
+export default function InfoCard({name,des,img}) {
 
   return (
     <Grid
-    id="ourhotels"
+      id="ourhotels"
       container
       sx={{
         height: 800,
@@ -59,12 +59,9 @@ export default function InfoCard({name,des}) {
         <Fade duration={1000}>
           <Box
             component="img"
-            sx={{
-              height: 800,
-              width: 990,
-            }}
+            sx={{ paddingTop: 7, height: 740, width: 990 }}
             alt="The house from the offer."
-            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
+            src={img}
           />
         </Fade>
       </Grid>

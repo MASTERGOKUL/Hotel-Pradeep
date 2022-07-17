@@ -8,8 +8,8 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
+  Box
 } from "@mui/material";
-import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
 import DrawerComp from "./drawer";
 const Navbar = () => {
   const [value, setValue] = useState();
@@ -20,14 +20,14 @@ const Navbar = () => {
 
   // name of navbar sections or pages
   const links=["#ourhotels",
-  "#experiences",
+  "#gallery",
   "#",
   "#aboutUs",
   "#contactUs"];
 
   const pages = [
     "Our Hotels",
-    "experiences",
+    "Gallery",
     "Wedding",
     "ABoutUs",
     "ContactUs"];
@@ -35,7 +35,7 @@ const Navbar = () => {
   const [color, setColor] = useState("#00000000");
   const changeColor = () => {
     if (window.scrollY >= 500) {
-      setColor("#000");
+      setColor("#1b2a49");
     } else {
       setColor("#00000000");
     }
@@ -49,18 +49,17 @@ const Navbar = () => {
         <Toolbar>
           {/* icon*/}
 
-          <AddBusinessRoundedIcon
-            sx={{
-              transform: "scale(2)",
+          <Box component="img" src={require("../../assets/PradeepLogo.jpg")}   sx={{
+            height: "50px",
               position: "static",
               paddingLeft: "5%",
-            }}
-          />
+            }} />
+
 
           {isMatch ? (
             <>
               {/* navbar Name*/}
-              <Typography sx={{ fontSize: "2rem", paddingLeft: "6%" }}>
+              <Typography sx={{ fontSize: "2rem", paddingLeft: "2%" }}>
                 Hotel pradeep
               </Typography>
               <DrawerComp />
@@ -68,7 +67,7 @@ const Navbar = () => {
           ) : (
             <>
               {/* navbar Name*/}
-              <Typography sx={{ fontSize: "2rem", paddingLeft: "6%" }}>
+              <Typography sx={{ fontSize: "2rem", paddingLeft: "2%" }}>
                 Hotel pradeep
               </Typography>
 

@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import "./deatailcard.css";
 
-export default function DeatailCard({ name, des1 }) {
+export default function DeatailCard({ name, des1, img }) {
   return (
     <Grid
       container
@@ -22,11 +22,12 @@ export default function DeatailCard({ name, des1 }) {
           <Box
             component="img"
             sx={{
-              height: 800,
+              paddingTop: 3,
+              height: 770,
               width: 1000,
             }}
             alt="The house from the offer."
-            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
+            src={img}
           />
         </Fade>
       </Grid>
@@ -35,17 +36,18 @@ export default function DeatailCard({ name, des1 }) {
 
       <Grid item positon="fixed" sx={{ paddingLeft: 30 }}>
         <Fade duration={2500}>
-        <Slide left duration={1000}>
-          <div className="vl"></div>
-        </Slide></Fade>
+          <Slide left duration={1000}>
+            <div className="vl"></div>
+          </Slide>
+        </Fade>
       </Grid>
       {/*details*/}
-     
+
       <Grid
         item
         sx={{
           height: 200,
-          width:"auto",
+          width: "auto",
           marginTop: 3,
           position: "static",
           paddingRight: 0,
@@ -55,7 +57,7 @@ export default function DeatailCard({ name, des1 }) {
         {name.map((name, index) => {
           return (
             <>
-              <div className="card" sx={{ width: 200,marginBottom:0 }}>
+              <div className="card" sx={{ width: 200, marginBottom: 0 }}>
                 <Slide left duration={1500}>
                   {/*heading above line*/}
                   <Typography key={index} variant="h4">

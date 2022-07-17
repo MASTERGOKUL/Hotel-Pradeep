@@ -22,7 +22,7 @@ export default function AboutUs() {
       <Fade right duration={1000}>
         <img
           className="aboutimage"
-          src="https://th.bing.com/th/id/OIP.DLCv8MNcKK46kqwJxzaV3QHaE8?w=280&h=187&c=7&r=0&o=5&pid=1.7"
+          src={require("../../assets/pradeepPalace/palace-2.jpg")}
         ></img>
         <Typography
           width="680px"

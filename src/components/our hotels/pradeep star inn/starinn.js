@@ -53,11 +53,12 @@ export default function Starinn() {
     ],
     des: [rooms, banquet, restaurant, sincity,ganga],
   };
-
+  const img1=require("../../../assets/pradeep star inn/starinn-23.jpg")
+  const img2=require("../../../assets/pradeep star inn/starinn-10.jpg")
   return (
     <>
-      <InfoCard name={name} des={des} />
-      <DeatailCard name={detail.name} des1={detail.des} />
+      <InfoCard name={name} des={des} img={img1}/>
+      <DeatailCard name={detail.name} des1={detail.des} img={img2}/>
     </>
   );
 }
