@@ -57,7 +57,7 @@ export default function Palace() {
   const img2 = require("../../../assets/pradeepPalace/palace-17.jpg");
   return (
     <>
-      <InfoCard name={name} des={des} img={img1} />
+      <InfoCard name={name} des={des} img={img1}/>
       <DeatailCard name={detail.name} des1={detail.des} img={img2} />
     </>
   );

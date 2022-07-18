@@ -72,7 +72,7 @@ const Navbar = () => {
               </Typography>
 
               <Tabs
-                sx={{ marginLeft: "auto", position: "relative", left: 200 }}
+                sx={{ marginLeft: "auto", position: "relative", right: 10 }}
                 indicatorColor="primary"
                 textColor="inherit"
                 value={value}
@@ -84,14 +84,6 @@ const Navbar = () => {
                   <Tab  label={pages} sx={{ fontSize: "1.1rem" }} href={links[index]}></Tab>
                 ))}
               </Tabs>
-              {/* login button*/}
-              <Button sx={{ marginLeft: "auto" }} variant="contained">
-                Login
-              </Button>
-              {/* signup button*/}
-              <Button sx={{ marginLeft: "10px" }} variant="contained">
-                SignUp
-              </Button>
             </>
           )}
         </Toolbar>

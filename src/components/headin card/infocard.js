@@ -12,9 +12,10 @@ export default function InfoCard({name,des,img}) {
       container
       sx={{
         height: 800,
-        marginTop: 3,
+        marginTop: 10,
         marginBottom: 3,
         display: "flex",
+        position: "relative",
         flexDirection: "column",
       }}
     >
@@ -23,7 +24,7 @@ export default function InfoCard({name,des,img}) {
         sx={{
           height: 200,
           marginTop: 10,
-          position: "static",
+          position: "relative",
           paddingRight: 0,
           paddingLeft: 2,
         }}
@@ -41,6 +42,7 @@ export default function InfoCard({name,des,img}) {
             </Slide>
           </div>
           {/*descriptioin below line*/}
+          <Grid>
           <Fade left duration={2000}>
             <Typography
               width="680px"
@@ -50,7 +52,7 @@ export default function InfoCard({name,des,img}) {
             >
               {des}
             </Typography>
-          </Fade>
+          </Fade></Grid>
         </>
       </Grid>
 

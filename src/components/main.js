@@ -6,6 +6,7 @@ import Navbar from "./navbar/navbar";
 import Palace from "./our hotels/pradeep palace/palace";
 import Starinn from "./our hotels/pradeep star inn/starinn";
 import Gallery from "./gallery/gallery";
+import SpeedCount from "./countup/coutup.js";
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
       <Headerimg id="heading" />
       <AboutUs id="about"/>
       <Gallery id="gallery"/>
+      <SpeedCount />
       <Palace id="palace"/>
       <Starinn />
       <Footer id="contact"/>
