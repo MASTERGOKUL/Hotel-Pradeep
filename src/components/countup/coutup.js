@@ -3,18 +3,11 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-
+import "./countup.css";
 const SpeedCount = () => {
-const countStyle = {
-  backgroundColor: "rgba(27, 42, 73,0.9)",
-  height: 100,
-  padding: 100,
-  marginTop: 200,
-  display:"flex",
-  color:"white"
-};
+
     return (
-      <div style={countStyle}>
+      <div className="count">
         {/*rooms */}
         <Box pl={34} pr={20}>
         <Typography variant="h3" pl={2.5}>
