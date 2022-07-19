@@ -33,7 +33,7 @@ const Headerimg = () => {
       Hotel Pradeep</Typography>
       <br />
       <Typography variant="h3" align="center" width={1500}>
-      Life moves an unrushed pace at the Pradeep Hotels open year-round your Home away from Home.
+      Life moves an unrushed pace at the Pradeep Hotels open year-round Your Home away from Home.
       </Typography>
       </Box>
     </Box>

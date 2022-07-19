@@ -8,7 +8,9 @@ const SpeedCount = () => {
 
     return (
       <div className="count">
+        {/* <Typography sx={{position:"absolute",marginBottom:100}}>Hotel Pradeep Palace Provide stars facility unique Hotel, conveniently located in the heart of the City and Centre of all tourist interest.</Typography> */}
         {/*rooms */}
+
         <Box pl={34} pr={20}>
         <Typography variant="h3" pl={2.5}>
           <CountUp start={0} end={43} duration={4} />+
